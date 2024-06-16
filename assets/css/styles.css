@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.logo_socius {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.form_container_signUp {
+    height: 660px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 30px;
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form_container_signUp h4 {
+    padding-bottom: 10px;
+}
+
+.form_container_signIn {
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 30px;
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form_container_signIn h4 {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.regIzquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.regDerecha {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.regDerecha .inputsDerecha {
+    margin-bottom: 15px;
+}
+
+.regIzquierda {
+    flex: 1;
+}
+
+.regDerecha {
+    flex: 1;
+}
+
+form input, form select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.registrarseButton {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 0px solid black;
+    background-color: #70c6fd;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.registrarseButton:hover {
+    transform: translateY(-5px);
+    background-color: #3b95c9;
+}
+
+.iniciarSesionButton {
+    margin-top: 40px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 0px solid black;
+    background-color: #70c6fd;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.iniciarSesionButton:hover {
+    transform: translateY(-5px);
+    background-color: #3b95c9;
+}
+
+.form_container_signUp p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.form_container_signIn p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.terminos {
+    margin-top: 40px;
+    font-size: 14px;
+}
