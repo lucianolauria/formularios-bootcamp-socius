@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Clase 1 - Ejercicio</title>
-	<link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clase 1 - Ejercicio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+
 <body>
-	<div class="form_container_signUp">
-		<img src="assets/images/logo socius.png" alt="" class="logo_socius">
-		<h4>¡Regístrate!</h4>
-		<div class="formulario">
-			<form action="">
-				<div class="regIzquierda">
-					<input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
+  <div class="form_container_signUp">
+    <img src="assets/images/logo socius.png" alt="" class="logo_socius">
+    <h4>¡Regístrate!</h4>
+    <div class="formulario">
+      <form action="">
+        <div class="regIzquierda">
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
+          <input type="text" name="apellido" id="apellido" placeholder="Apellido" required />
+          <input type="text" name="usuario" id="usuario" placeholder="Usuario" required />
+          <input type="password" name="password" id="password" placeholder="Contraseña" required />
+          <input type="password" name="password" id="repeatPassword" placeholder="Repetir contraseña" required />
+          <input type="number" name="telefono" id="telefono" placeholder="Teléfono" required />
+        </div>
 
-					<input type="text" name="apellido" id="apellido" placeholder="Apellido" required />
+        <div class="regDerecha">
+          <label for="fechaNac">Fecha de nacimiento:</label>
+          <input type="date" name="fechaNac" id="fechaNac" placeholder="fechaNac" required class="inputsDerecha" />
 
-					<input type="text" name="usuario" id="usuario" placeholder="Usuario" required />
-
-					<input type="password" name="password" id="password" placeholder="Contraseña" required />
-
-					<input type="password" name="password" id="repeatPassword" placeholder="Repetir contraseña" required />
-
-					<input type="number" name="telefono" id="telefono" placeholder="Teléfono" required />
-				</div>
-
-				<div class="regDerecha">
-					<label for="fechaNac">Fecha de nacimiento:</label>
-					<input type="date" name="fechaNac" id="fechaNac" placeholder="fechaNac" required class="inputsDerecha"/>
-
-					<label for="nacionalidad">Seleccione su país:</label>
-					<select name="nacionalidad" id="nacionalidad" class="inputsDerecha">
+          <label for="nacionalidad">Seleccione su país:</label>
+          <select name="nacionalidad" id="nacionalidad" class="inputsDerecha">
             <option value="1">Argentina</option>
             <option value="2">Bolivia</option>
             <option value="3">Brasil</option>
@@ -44,29 +41,30 @@
             <option value="10">Venezuela</option>
           </select>
 
-					<div class="genero">
-						<label for="">Género</label><br />
+          <div class="genero">
+            <label for="">Género</label><br />
 
-						<input type="radio" name="genero" value="m" id="Masculino" />
-						<label for="Masculino">Masculino</label><br>
+            <input type="radio" name="genero" value="m" id="Masculino" />
+            <label for="Masculino">Masculino</label><br>
 
-						<input type="radio" name="genero" value="f" id="Femenido" />
-						<label for="Femenido">Femenino</label>
-					</div>
-				</div>
-		</div>
+            <input type="radio" name="genero" value="f" id="Femenido" />
+            <label for="Femenido">Femenino</label>
+          </div>
+        </div>
+    </div>
 
     <div class="terminos">
-    <input type="checkbox" name="check" value="1" id="check"/>
-    <label for="check">Acepto términos y condiciones.</label>
+      <input type="checkbox" name="check" value="1" id="check" />
+      <label for="check">Acepto términos y condiciones.</label>
+    </div>
+
+    <input type="submit" value="Registrarse" class="registrarseButton" onclick="registrarUsuario()">
+    <p>¿Ya tienes una cuenta? <a href="signIn.html">Inicia sesión.</a></p>
+
+    </form>
   </div>
 
-		<input type="submit" value="Registrarse" class="registrarseButton" onclick="registrarUsuario()">
-		<p>¿Ya tienes una cuenta? <a href="signIn.html">Inicia sesión.</a></p>
-
-		</form>
-	</div>
-
-	<script src="assets/js/validations.js"></script>
+  <script src="assets/js/validations.js"></script>
 </body>
+
 </html>
